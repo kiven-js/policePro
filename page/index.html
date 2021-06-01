@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../urtil/bootstrap-4.3.1-dist/css/rest.css">
+    <link rel="stylesheet" href="../urtil/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../urtil/bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../urtil/bootstrap-4.3.1-dist/css/fit.css">
+    <script src="../urtil/jquery.js"></script>
+    <script src="../urtil/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../urtil/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+</head>
+<style>
+</style>
+
+<body>
+    <!-- height == 500 -->
+
+    <!-- <div style="height:500px;background-color:#eee"></div> -->
+
+    <div class="container">
+        <div class="row">
+              
+            <div class="col-8 d-flex justify-content-between navdemo1">
+                <div class="btn-group">
+                    <button type="button" class="btn border border-black-20 text-black-50 dropdown-toggle"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        --请选择政策级别--
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                        <button class="dropdown-item" type="button">Something else here</button>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn border border-black-20 text-black-50 dropdown-toggle"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        --请选择发文部门--
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                        <button class="dropdown-item" type="button">Something else here</button>
+                    </div>
+                </div>
+                <div class="btn-group border border-black-20">
+                    <button type="button" class="btn text-black-50">贵州省</button>
+                    <button type="button" class="btn text-black-50 ml-4 dropdown-toggle dropdown-toggle-split"
+                        id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        data-reference="parent">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </div>
+                <div class="btn-group border border-black-20">
+                    <button type="button" class="btn text-black-50 ">贵阳市</button>
+                    <button type="button" class="btn text-black-50 ml-4  dropdown-toggle dropdown-toggle-split"
+                        id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        data-reference="parent">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </div>
+                <div class="btn-group border border-black-20 ">
+                    <button type="button" class="btn text-black-50">市辖区</button>
+                    <button type="button" class="btn text-black-50 ml-4 dropdown-toggle dropdown-toggle-split"
+                        id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        data-reference="parent">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4 nav3">
+                    <div class="input-group searchSwrapper mt-1">
+                        <input class="form-control input-control "type="search"
+                            placeholder="请输入要搜索的政策名..." aria-label="Search">
+                        <div class="input-group-prepend">
+                            <div class=" input-group-text iconfont border  border-left-0 "
+                                style=" font-size: 12px;width: 50px;" id="btnGroupAddon">
+                                &#xe616;
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+
+        </div>
+        <div class="row mt-4 " id="htmldata" style="background-image:linear-gradient(to bottom,rgb(238,238,238,.2) 2%,#eee 98%)">
+        
+        </div>
+        <div class="row" style="background-color: #eee;">
+            <div class="col-12">
+                <div type="button" class="btn text-warning font-weight-bold d-flex justify-content-center addData">加载更多  >>></div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container-fluid">
+        <div class="row " style="background-color: #007291;">
+            <div class="col-7 py-3">
+                <div class="text-white" style="margin-left:80px">Copyright@ 贵州北斗重创空间</div>
+            </div>
+            <div class="col-5 py-3">
+                <ul class="d-flex">
+                    <li class=" text-white mr-3">项目申报</li>
+                    <li class=" text-warning mr-3">——</li>
+                    <li class=" text-white mr-3">政策咨询</li>
+                    <li class=" text-warning mr-3">——</li>
+                    <li class=" text-white mr-3">关于我们</li>
+                    <li class=" text-warning mr-3">——</li>
+                    <li class=" text-white mr-3">联系我们</li>
+                    <li class=" text-warning mr-3">——</li>
+                    <li class=" text-white">在线咨询</li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js" type="module"></script>
+</html>
